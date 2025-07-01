@@ -328,4 +328,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(style);
+});
+
+// Catálogo de productos por sección
+
+document.querySelectorAll('.category-link[data-catalog]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const catalogId = 'catalogo-' + this.dataset.catalog;
+        const catalog = document.getElementById(catalogId);
+        if (catalog) {
+            // Oculta todos los catálogos primero
+            document.querySelectorAll('.catalogo-productos').forEach(cat => {
+                if (cat !== catalog) cat.style.display = 'none';
+            });
+            // Alterna el catálogo seleccionado
+            catalog.style.display = (catalog.style.display === 'none' || catalog.style.display === '') ? 'block' : 'none';
+        }
+    });
 }); 
