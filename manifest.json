@@ -1,0 +1,27 @@
+{
+  "name": "Autoservicio Ferretero San Miguel",
+  "short_name": "Autoservicio",
+  "description": "La fuerza detrás de cada gran obra. Equipamos tu industria o proyecto solo con los mejores productos.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2563eb",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192/2563eb/ffffff?text=A",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512/2563eb/ffffff?text=A",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "tools", "hardware"],
+  "lang": "es-CL",
+  "dir": "ltr"
+} 
